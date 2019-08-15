@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			True or False
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body style="margin:0;background-color:black">
+		<center>
+			<canvas id="game" width="200" height="100"></canvas>
+		</center>
+	</body>
+	<audio id="breakSound" src="sounds/break.mp3" type="audio/mpeg"></audio>
+	<audio id="pianoASound" src="sounds/piano-a.mp3" type="audio/mpeg"></audio>
+	<audio id="pianoCSound" src="sounds/piano-c.mp3" type="audio/mpeg"></audio>
+	<audio id="pianoESound" src="sounds/piano-e.mp3" type="audio/mpeg"></audio>
+	<script src="dependencies/howler/howler.min.js"></script>
+	<script src="scripts/drawScreens.js"></script>
+	<script src="scripts/utilityFunctions.js"></script>
+	<script src="scripts/collisionDetection.js"></script>
+	<script src="scripts/gameLogic.js"></script>
+</html>
+
