@@ -1008,10 +1008,10 @@ function drawRetryOverlay() {
 					val = bestStreakShip[1]-streak;
 				}
 				else if (screen == 8) {
-					val = bestStreakPitch[0]-streak;
+					val = bestStreakPitch[1]-streak;
 				}
 				else if (screen == 10) {
-					val = bestStreakFractions[0]-streak;
+					val = bestStreakFractions[1]-streak;
 				}
 				if ( val == 0) {
 					ctx.fillText(" GREAT EFFORT!", width/8, height/10*2);
@@ -1035,8 +1035,11 @@ function drawRetryOverlay() {
 					val = bestStreakShip[2]-streak;
 				}
 				else if (screen == 8) {
-					val = bestStreakPitch[0]-streak;
-				}				
+					val = bestStreakPitch[2]-streak;
+				}
+				else if (screen == 10) {
+					val = bestStreakFractions[2]-streak;
+				}
 				if ( val == 0) {
 					ctx.fillText(" GREAT EFFORT!", width/8, height/10*2);
 					ctx.fillText("TIED YOUR BEST!", width/8, height/10*3);
